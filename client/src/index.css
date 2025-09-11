@@ -1,11 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
 
+/* Apply font globally */
 * {
   font-family: "Outfit", sans-serif;
 }
 
+/* Define custom variables (optional) */
 @theme {
   --color-primary: #5044e5;
+}
+
+/* Add custom background image utility */
+@layer utilities {
+  .bg-gradient-hero {
+    background-image: url("/gradientBackground.png");
+  }
+  .bg-gradient-blue-purple {
+    background-image: linear-gradient(to bottom, #4f46e5, #8b5cf6);
+  }
+
+  .bg-gradient-red-orange {
+    background-image: linear-gradient(to bottom, #f43f5e, #f97316);
+  }
+
+  .bg-gradient-green-teal {
+    background-image: linear-gradient(to bottom, #10b981, #14b8a6);
+  }
 }
