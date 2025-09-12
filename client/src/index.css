@@ -10,6 +10,13 @@
 @theme {
   --color-primary: #5044e5;
 }
+.reset-tw,
+.reset-tw * {
+  all: revert !important;
+}
+.cl-drawerRoot {
+  z-index: 10;
+}
 
 /* Add custom background image utility */
 @layer utilities {
